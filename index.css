@@ -13918,6 +13918,9 @@ body {
 .big-img {
   border-radius: 300px!important;
   overflow: hidden;
+  -webkit-animation:spin 40s linear infinite;
+  -moz-animation:spin 40s linear infinite;
+  animation:spin 40s linear infinite;
   &:after {
     content: '';
     display: block;
@@ -13928,4 +13931,23 @@ body {
     border-radius:50%;
     box-shadow: inset 0px 0px 20px 20px var(  --color_bTGzw_default)
   }
+}
+
+@-moz-keyframes spin { 
+  100% {
+    -moz-transform: rotate(360deg); 
+  } 
+}
+@-webkit-keyframes spin { 
+  100% { 
+    -webkit-transform: rotate(360deg);
+    
+   } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+      
+  } 
 }
