@@ -12594,47 +12594,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.b-root {
-  --font_default: "Open Sans";
-  --font_bTHAI_default: "Merriweather";
-  --font_bTHAJ_default: "Roboto";
-  --color_text_default: rgba(9, 23, 71, 1);
-  --color_text_default_rgb: 9, 23, 71;
-  --color_alert_default: rgba(250, 181, 21, 1);
-  --color_alert_default_rgb: 250, 181, 21;
-  --color_primary_default: rgba(2, 5, 211, 1);
-  --color_primary_default_rgb: 2, 5, 211;
-  --color_success_default: rgba(23, 219, 78, 1);
-  --color_success_default_rgb: 23, 219, 78;
-  --color_surface_default: rgba(255, 255, 255, 1);
-  --color_surface_default_rgb: 255, 255, 255;
-  --color_background_default: rgba(255, 255, 255, 1);
-  --color_background_default_rgb: 255, 255, 255;
-  --color_destructive_default: rgba(255, 0, 0, 1);
-  --color_destructive_default_rgb: 255, 0, 0;
-  --color_primary_contrast_default: rgba(255, 255, 255, 1);
-  --color_primary_contrast_default_rgb: 255, 255, 255;
-  --color_bTGzp_default: rgba(232, 224, 232, 1);
-  --color_bTGzp_default_rgb: 232, 224, 232;
-  --color_bTGzq_default: rgba(250, 181, 21, 1);
-  --color_bTGzq_default_rgb: 250, 181, 21;
-  --color_bTGzr_default: rgba(219, 185, 249, 1);
-  --color_bTGzr_default_rgb: 219, 185, 249;
-  --color_bTGzv_default: rgba(23, 219, 78, 1);
-  --color_bTGzv_default_rgb: 23, 219, 78;
-  --color_bTGzw_default: rgba(44, 41, 46, 1);
-  --color_bTGzw_default_rgb: 44, 41, 46;
-  --color_bTGzx_default: rgba(21, 18, 23, 1);
-  --color_bTGzx_default_rgb: 21, 18, 23;
-  --color_bTHAB_default: rgba(255, 0, 0, 1);
-  --color_bTHAB_default_rgb: 255, 0, 0;
-  --color_bTHAC_default: rgba(63, 36, 88, 1);
-  --color_bTHAC_default_rgb: 63, 36, 88;
-  --color_bTHAD_default: rgba(78, 67, 86, 1);
-  --color_bTHAD_default_rgb: 78, 67, 86;
-  --color_bTHAH_default: rgba(74, 69, 78, 1);
-  --color_bTHAH_default_rgb: 74, 69, 78;
-}
+
 .b-root .baTaHaAaO > .bubble-r-container {
   justify-content: flex-start;
 }
@@ -13952,4 +13912,20 @@ body {
   min-width: 0px;
   overflow-wrap: break-word;
   text-align: center;
+}
+
+
+.big-img {
+  border-radius: 300px!important;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: inset 0px 0px 20px 20px var(  --color_bTGzw_default)
+  }
 }
