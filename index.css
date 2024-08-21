@@ -13951,3 +13951,23 @@ body {
       
   } 
 }
+
+@media screen and (max-width: 600px) {
+  .no-mobile {
+    display: none!important;
+  }
+
+  .big-title {
+    font-size: 35px!important;
+  }
+
+  .big-img {
+    flex-grow: unset !important;
+    width: 290px !important;
+
+  }
+  .big-container {
+    margin-top: 30px!important;
+  }
+}
+
