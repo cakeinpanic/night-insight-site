@@ -31,7 +31,7 @@
     --color_bTGzv_default: rgba(23, 219, 78, 1);
     --color_bTGzv_default_rgb: 23, 219, 78;
     --color_bTGzw_default: #2b283a;
-    --color_bTGzw_default_rgb:#2b283a;
+    --color_bTGzw_default_rgb: #2b283a;
     --color_bTGzx_default: rgba(21, 18, 23, 1);
     --color_bTGzx_default_rgb: 21, 18, 23;
     --color_bTHAB_default: rgba(255, 0, 0, 1);
@@ -57,20 +57,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Merriweather:400%7CMerriweather:700%7COpen+Sans:regular%7COpen+Sans:600%7COpen+Sans:700%7CRoboto:regular%7CRoboto:900"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./logo.jpg"
-    />
+    <link rel="icon" type="image/png" href="./logo.jpg" />
     <meta name="fragment" content="!" />
-    <meta
-      name="description"
-      content="Night insight bot"
-    />
-    <meta
-      name="description"
-      content="Night insight bot"
-    />
+    <meta name="description" content="Night insight bot" />
+    <meta name="description" content="Night insight bot" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="Night insight bot" />
     <meta name="twitter:title" content="Night insight bot" />
@@ -84,7 +74,7 @@
       name="twitter:description"
       content="Бот для записи и анализа сновидений"
     />
-     <link
+    <link
       rel="image_src"
       href="https://cakeinpanic.github.io/night-insight-site/logo.jpg"
     />
@@ -98,16 +88,24 @@
     />
 
     <meta property="og:type" content="website" />
- 
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
     <link
       type="text/css"
-      href="./index.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css"
       rel="stylesheet"
     />
-  
+    <link type="text/css" href="./index.css" rel="stylesheet" />
+
+    <link type="text/css" href="./faq.css" rel="stylesheet" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
     <style>
       @keyframes rotate360 {
         0% {
@@ -117,15 +115,12 @@
           transform: rotate(360deg);
         }
       }
-
     </style>
   </head>
   <body style="height: 100%; display: flex; flex-direction: column">
-
     <div
       class="bubble-element Page baTaHaAaO main-page bubble-r-container-wrapper"
       style="
-    
         background-color: rgb(255, 255, 255);
         min-width: 0px;
         min-height: max(767px, 100%);
@@ -153,7 +148,7 @@
             opacity: 1;
             align-self: stretch;
             min-width: 0px;
-            order: 1;
+            
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -172,7 +167,7 @@
               opacity: 1;
               align-self: stretch;
               min-width: 0px;
-              order: 1;
+              
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -192,7 +187,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                order: 1;
+                
                 min-height: 0px;
                 width: max-content;
                 flex-grow: 0;
@@ -209,7 +204,7 @@
                   align-self: center;
                   min-width: 32px;
                   max-width: 32px;
-                  order: 1;
+                  
                   width: 32px;
                   flex-grow: 1;
                   height: max-content;
@@ -221,7 +216,7 @@
                   style="position: relative; height: 0px; padding-top: 100%"
                 ></div>
                 <img
-                src="./logo.jpg"
+                  src="./logo.jpg"
                   style="
                     top: 0px;
                     left: 0px;
@@ -236,7 +231,6 @@
               <h4
                 class="bubble-element Text baTaHaAr"
                 style="
-                  
                   overflow: visible;
                   font-family: var(--font_bTHAI_default);
                   font-size: 24px;
@@ -247,7 +241,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  order: 3;
+                  
                   min-height: 0px;
                   width: max-content;
                   flex-grow: 0;
@@ -259,7 +253,7 @@
                 Night insight
               </h4>
             </div>
-        
+
             <div
               class="no-mobile bubble-element Group baTaHaBaK bubble-r-container flex row"
               style="
@@ -270,7 +264,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                order: 4;
+                
                 min-height: 0px;
                 width: 0px;
                 flex-grow: 1;
@@ -295,7 +289,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  order: 6;
+                  
                   min-height: 48px;
                   max-height: 48px;
                   width: max-content;
@@ -305,11 +299,14 @@
                   z-index: 6;
                 "
               >
-              <a href="https://t.me/deeper_dreams_bot" target="_blank">Открыть бота в Telegram</a>
+                <a href="https://t.me/deeper_dreams_bot" target="_blank"
+                  >Открыть бота в Telegram</a
+                >
               </button>
             </div>
           </div>
         </div>
+
         <div
           class="bubble-element Group baTaHaBp bubble-r-container flex column"
           style="
@@ -320,7 +317,7 @@
             opacity: 1;
             align-self: flex-start;
             min-width: 0px;
-            order: 2;
+            
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -341,7 +338,7 @@
               align-self: center;
               min-width: 0px;
               max-width: 1137px;
-              order: 2;
+              
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -360,9 +357,9 @@
                 border-radius: 0px;
                 opacity: 1;
                 align-self: center;
-                
+
                 max-width: 480px;
-                order: 1;
+                
                 min-height: 0px;
                 width: 100%;
                 flex-grow: 1;
@@ -374,7 +371,6 @@
               <h5
                 class="bubble-element Text baTaHaBaR"
                 style="
-                  
                   overflow: visible;
                   font-family: var(--font_bTHAJ_default_default);
                   font-size: 16px;
@@ -385,7 +381,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  order: 1;
+                  
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -401,7 +397,6 @@
               <h1
                 class="big-title bubble-element Text baTaHaBb"
                 style="
-                  
                   overflow: visible;
                   font-family: var(--font_bTHAI_default);
                   font-size: 54px;
@@ -412,7 +407,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  order: 2;
+                  
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -422,12 +417,11 @@
                   z-index: 3;
                 "
               >
-              Начните понимать себя лучше с помощью сновидений
+                Начните понимать себя лучше с помощью сновидений
               </h1>
               <div
                 class="bubble-element Text baTaHaBaV"
                 style="
-                  
                   overflow: visible;
                   font-family: var(--font_bTHAJ_default_default);
                   font-size: 16px;
@@ -438,7 +432,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  order: 3;
+                  
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -448,7 +442,8 @@
                   z-index: 3;
                 "
               >
-                Бот позволяет хранить ваши сны и интерпретировать их с точки зрения Юнгианской психологии
+                Бот позволяет хранить ваши сны и интерпретировать их с точки
+                зрения Юнгианской психологии
               </div>
               <button
                 class="bubble-element Button baTaHaBaX"
@@ -466,7 +461,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 150px;
-                  order: 4;
+                  
                   min-height: 48px;
                   max-height: 48px;
                   height: 48px;
@@ -476,7 +471,9 @@
                   z-index: 4;
                 "
               >
-              <a href="https://t.me/deeper_dreams_bot" target="_blank">Открыть бота в Telegram</a>
+                <a href="https://t.me/deeper_dreams_bot" target="_blank"
+                  >Открыть бота в Telegram</a
+                >
               </button>
             </div>
             <div
@@ -490,7 +487,7 @@
                 align-self: center;
                 min-width: 0px;
                 max-width: 500px;
-                order: 3;
+                
                 min-height: 0px;
                 width: 0px;
                 flex-grow: 1;
@@ -506,13 +503,12 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  order: 1;
+                  
                   width: 0px;
                   flex-grow: 1;
                   height: max-content;
                   margin: 0px;
                   z-index: 3;
-                 
                 "
               >
                 <div
@@ -529,319 +525,13 @@
                     height: 100%;
                     position: absolute;
                     border-radius: 8px;
-                   
                   "
                 />
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="bubble-element Group baTaHaCaT bubble-r-container flex column"
-          style="
-            background-color: var(--color_bTGzr_default);
-            overflow: visible;
-            justify-content: flex-start;
-            border-radius: 0px;
-            opacity: 1;
-            align-self: flex-start;
-            min-width: 0px;
-            order: 3;
-            min-height: 0px;
-            height: max-content;
-            flex-grow: 0;
-            flex-shrink: 0;
-            width: calc(100% + 0px);
-            margin: 0px;
-            z-index: 2;
-            display: none;  /* block with tiny imgs */
-          "
-        >
-          <div
-            class="bubble-element Group baTaHaCaS bubble-r-container flex column"
-            style="
-              overflow: visible;
-              justify-content: flex-start;
-              row-gap: 24px;
-              border-radius: 0px;
-              opacity: 1;
-              align-self: center;
-              min-width: 0px;
-              max-width: 1137px;
-              order: 2;
-              min-height: 0px;
-              height: max-content;
-              flex-grow: 0;
-              flex-shrink: 0;
-              width: calc(100% - 80px);
-              margin: 36px 40px 48px;
-              z-index: 2;
-            "
-          >
-            <div
-              class="bubble-element Group baTaHaCaR bubble-r-container flex column"
-              style="
-              
-                overflow: visible;
-                justify-content: flex-start;
-                row-gap: 0px;
-                border-radius: 0px;
-                opacity: 1;
-                align-self: flex-start;
-                min-width: 0px;
-                order: 1;
-                min-height: 60px;
-                height: max-content;
-                flex-grow: 0;
-                flex-shrink: 0;
-                width: calc(100% + 0px);
-                margin: 0px;
-                z-index: 5;
-              "
-            >
-              <h4
-                class="bubble-element Text baTaHaCaL"
-                style="
-                  
-                  overflow: visible;
-                  font-family: var(--font_bTHAI_default);
-                  font-size: 24px;
-                  font-weight: 700;
-                  color: var(--color_bTHAC_default);
-                  text-align: center;
-                  line-height: 1.4;
-                  border-radius: 0px;
-                  opacity: 1;
-                  align-self: flex-start;
-                  min-width: 0px;
-                  order: 1;
-                  min-height: 0px;
-                  height: max-content;
-                  flex-grow: 0;
-                  flex-shrink: 0;
-                  width: calc(100% + 0px);
-                  margin: 0px;
-                  z-index: 3;
-                "
-              >
-                The #1 dream interpretation app
-              </h4>
-              <div
-                class="bubble-element Text baTaHaCaN"
-                style="
-                  
-                  overflow: visible;
-                  font-family: var(--font_bTHAJ_default_default);
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: var(--color_bTHAC_default);
-                  text-align: center;
-                  line-height: 1.4;
-                  border-radius: 0px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 0px;
-                  order: 2;
-                  min-height: 0px;
-                  height: max-content;
-                  flex-grow: 0;
-                  flex-shrink: 0;
-                  width: calc(100% + 0px);
-                  margin: 0px;
-                  z-index: 3;
-                "
-              >
-                As recognized by renowned sleep experts and therapists
-              </div>
-            </div>
-            <div
-              class="bubble-element Group baTaHaCaH bubble-r-container flex row"
-              style="
-                overflow: visible;
-                justify-content: center;
-                gap: 24px;
-                border-radius: 0px;
-                opacity: 1;
-                align-self: flex-start;
-                min-width: 0px;
-                order: 4;
-                min-height: 0px;
-                height: max-content;
-                flex-grow: 0;
-                flex-shrink: 0;
-                width: calc(100% + 0px);
-                margin: 0px;
-                z-index: 4;
-              "
-            >
-              <div
-                class="bubble-element Image baTaHaBt"
-                style="
-                  border-radius: 8px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 78px;
-                  max-width: 100px;
-                  order: 1;
-                  width: 78px;
-                  flex-grow: 1;
-                  height: max-content;
-                  margin: 0px;
-                  z-index: 2;
-                "
-              >
-                <div
-                  class="aspect-ratio"
-                  style="position: relative; height: 0px; padding-top: 75.2475%"
-                ></div>
-                <img
-                  src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fd1muf25xaso8hp.cloudfront.net%2Fhttps%3A%2F%2Fa230c3c04c16654f2f327f8ad0ff86ef.cdn.bubble.io%2Ff1723563656494x302791057779540300%2FAI-Generated-Image.png?w=1187.2&amp;h=896&amp;auto=compress&amp;dpr=2&amp;=&amp;fit=crop&amp;crop=entropy"
-                  style="
-                    top: 0px;
-                    left: 0px;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-              <div
-                class="bubble-element Image baTaHaBv"
-                style="
-                  border-radius: 8px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 78px;
-                  max-width: 100px;
-                  order: 2;
-                  width: 78px;
-                  flex-grow: 1;
-                  height: max-content;
-                  margin: 0px;
-                  z-index: 2;
-                "
-              >
-                <div
-                  class="aspect-ratio"
-                  style="position: relative; height: 0px; padding-top: 75.2475%"
-                ></div>
-                <img
-                  src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fd1muf25xaso8hp.cloudfront.net%2Fhttps%3A%2F%2Fa230c3c04c16654f2f327f8ad0ff86ef.cdn.bubble.io%2Ff1723563647607x871706798963529500%2FAI-Generated-Image.png?w=1187.2&amp;h=896&amp;auto=compress&amp;dpr=2&amp;=&amp;fit=crop&amp;crop=entropy"
-                  style="
-                    top: 0px;
-                    left: 0px;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-              <div
-                class="bubble-element Image baTaHaBz"
-                style="
-                  border-radius: 8px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 78px;
-                  max-width: 100px;
-                  order: 3;
-                  width: 78px;
-                  flex-grow: 1;
-                  height: max-content;
-                  margin: 0px;
-                  z-index: 2;
-                "
-              >
-                <div
-                  class="aspect-ratio"
-                  style="position: relative; height: 0px; padding-top: 75.2475%"
-                ></div>
-                <img
-                  src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fd1muf25xaso8hp.cloudfront.net%2Fhttps%3A%2F%2Fa230c3c04c16654f2f327f8ad0ff86ef.cdn.bubble.io%2Ff1723563639868x627688123690076900%2FAI-Generated-Image.png?w=1187.2&amp;h=896&amp;auto=compress&amp;dpr=2&amp;=&amp;fit=crop&amp;crop=entropy"
-                  style="
-                    top: 0px;
-                    left: 0px;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-              <div
-                class="bubble-element Image baTaHaCaB"
-                style="
-                  border-radius: 8px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 78px;
-                  max-width: 100px;
-                  order: 4;
-                  width: 78px;
-                  flex-grow: 1;
-                  height: max-content;
-                  margin: 0px;
-                  z-index: 2;
-                "
-              >
-                <div
-                  class="aspect-ratio"
-                  style="position: relative; height: 0px; padding-top: 75.2475%"
-                ></div>
-                <img
-                  src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fd1muf25xaso8hp.cloudfront.net%2Fhttps%3A%2F%2Fa230c3c04c16654f2f327f8ad0ff86ef.cdn.bubble.io%2Ff1723563633510x138003199153165840%2FAI-Generated-Image.png?w=1187.2&amp;h=896&amp;auto=compress&amp;dpr=2&amp;=&amp;fit=crop&amp;crop=entropy"
-                  style="
-                    top: 0px;
-                    left: 0px;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-              <div
-                class="bubble-element Image baTaHaCaF"
-                style="
-                  border-radius: 8px;
-                  opacity: 1;
-                  align-self: center;
-                  min-width: 78px;
-                  max-width: 100px;
-                  order: 5;
-                  width: 78px;
-                  flex-grow: 1;
-                  height: max-content;
-                  margin: 0px;
-                  z-index: 2;
-                "
-              >
-                <div
-                  class="aspect-ratio"
-                  style="position: relative; height: 0px; padding-top: 75.2475%"
-                ></div>
-                <img
-                  src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fd1muf25xaso8hp.cloudfront.net%2Fhttps%3A%2F%2Fa230c3c04c16654f2f327f8ad0ff86ef.cdn.bubble.io%2Ff1723563651743x180758997364829600%2FAI-Generated-Image.png?w=1187.2&amp;h=896&amp;auto=compress&amp;dpr=2&amp;=&amp;fit=crop&amp;crop=entropy"
-                  style="
-                    top: 0px;
-                    left: 0px;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 8px;
-                  "
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div
           class="bubble-element Group baTaHaFaG bubble-r-container flex column"
           style="
@@ -853,7 +543,7 @@
             opacity: 1;
             align-self: flex-start;
             min-width: 0px;
-            order: 6;
+            
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -874,7 +564,7 @@
               align-self: center;
               min-width: 0px;
               max-width: 1137px;
-              order: 2;
+              
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -894,7 +584,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                order: 2;
+                
                 min-height: 60px;
                 height: max-content;
                 flex-grow: 0;
@@ -914,7 +604,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  order: 1;
+                  
                   min-height: 60px;
                   height: max-content;
                   flex-grow: 0;
@@ -927,7 +617,6 @@
                 <h2
                   class="bubble-element Text baTaHaEt"
                   style="
-                    
                     overflow: visible;
                     font-family: var(--font_bTHAI_default);
                     font-size: 40px;
@@ -939,7 +628,7 @@
                     opacity: 1;
                     align-self: flex-start;
                     min-width: 0px;
-                    order: 1;
+                    
                     min-height: 0px;
                     height: max-content;
                     flex-grow: 0;
@@ -949,12 +638,11 @@
                     z-index: 3;
                   "
                 >
-                 Зачем нужен этот бот?
+                  Зачем нужен этот бот?
                 </h2>
                 <div
                   class="bubble-element Text baTaHaEv"
                   style="
-                    
                     overflow: visible;
                     font-family: var(--font_bTHAJ_default_default);
                     font-size: 16px;
@@ -966,7 +654,7 @@
                     opacity: 1;
                     align-self: center;
                     min-width: 0px;
-                    order: 2;
+                    
                     min-height: 0px;
                     height: max-content;
                     flex-grow: 0;
@@ -981,7 +669,7 @@
                 </div>
               </div>
             </div>
-           
+
             <div
               class="bubble-element Group baTaHaEp bubble-r-container flex row"
               style="
@@ -992,7 +680,7 @@
                 opacity: 1;
                 align-self: flex-start;
                 min-width: 0px;
-                order: 5;
+                
                 min-height: 0px;
                 height: max-content;
                 flex-grow: 0;
@@ -1002,7 +690,6 @@
                 z-index: 4;
               "
             >
-          
               <div
                 class="bubble-element Group baTaHaEi bubble-r-container flex row"
                 style="
@@ -1013,7 +700,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  order: 3;
+                  
                   min-height: 0px;
                   width: 0px;
                   flex-grow: 1;
@@ -1030,8 +717,8 @@
                     align-self: center;
                     min-width: 0px;
                     max-width: 360px;
-                    order: 1;
-                  
+                    
+
                     width: 100%;
                     height: max-content;
                     margin: 0px;
@@ -1066,7 +753,7 @@
                     opacity: 1;
                     align-self: center;
                     min-width: 20%;
-                    order: 2;
+                    
                     min-height: 0px;
                     width: 20%;
                     flex-grow: 1;
@@ -1085,7 +772,7 @@
                       opacity: 1;
                       align-self: flex-start;
                       min-width: 0px;
-                      order: 1;
+                      
                       min-height: 0px;
                       height: max-content;
                       flex-grow: 0;
@@ -1098,7 +785,6 @@
                     <h6
                       class="bubble-element Text baTaHaEaQ"
                       style="
-                        
                         overflow: visible;
                         font-family: var(--font_bTHAI_default);
                         font-size: 20px;
@@ -1109,7 +795,7 @@
                         opacity: 1;
                         align-self: flex-start;
                         min-width: 0px;
-                        order: 1;
+                        
                         min-height: 0px;
                         height: max-content;
                         flex-grow: 0;
@@ -1119,19 +805,23 @@
                         z-index: 2;
                       "
                     >
-                    Сны — это волшебные послания, которые помогают нам приблизиться к себе.
-                    <br/><br/>
-                    Как же понять язык сновидений? Если вы хоть раз задавались этим вопросом, наш бот для вас!
-                    
-                    <br/><br/>
-                    Night Insight поможет вам познакомиться с миром снов, раскрыть их глубинный смысл и открыть тайны вашего подсознания.
-                    <br/><br/>
-                    Хотя он не заменит консультацию с психотерапевтом, бот станет вашим верным помощником в исследовании снов и даст вам возможность понять их язык.
-                    <br/><br/>
-                    Просто опишите свой сон, и Night Insight подскажет, что может скрываться за его образами.
-                    
+                      Сны — это волшебные послания, которые помогают нам
+                      приблизиться к себе.
+                      <br /><br />
+                      Как же понять язык сновидений? Если вы хоть раз задавались
+                      этим вопросом, наш бот для вас!
 
-
+                      <br /><br />
+                      Night Insight поможет вам познакомиться с миром снов,
+                      раскрыть их глубинный смысл и открыть тайны вашего
+                      подсознания.
+                      <br /><br />
+                      Хотя он не заменит консультацию с психотерапевтом, бот
+                      станет вашим верным помощником в исследовании снов и даст
+                      вам возможность понять их язык.
+                      <br /><br />
+                      Просто опишите свой сон, и Night Insight подскажет, что
+                      может скрываться за его образами.
                     </h6>
                     <div
                       class="bubble-element Group baTaHaEaP bubble-r-container flex row"
@@ -1143,7 +833,7 @@
                         opacity: 1;
                         align-self: flex-start;
                         min-width: 0px;
-                        order: 3;
+                        
                         min-height: 0px;
                         height: max-content;
                         flex-grow: 0;
@@ -1156,7 +846,6 @@
                       <div
                         class="bubble-element Text baTaHaEaL"
                         style="
-                          
                           overflow: visible;
                           font-family: var(--font_bTHAJ_default_default);
                           font-size: 16px;
@@ -1167,7 +856,7 @@
                           opacity: 1;
                           align-self: center;
                           min-width: 0px;
-                          order: 2;
+                          
                           min-height: 0px;
                           width: 0px;
                           flex-grow: 1;
@@ -1176,7 +865,420 @@
                           z-index: 2;
                         "
                       >
-                       С пожеланием открытий на вашем сновидном пути, Катя и Анна.
+                        С пожеланием открытий на вашем сновидном пути, Катя и
+                        Анна.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div
+          class="bubble-element Group baTaHaCaT bubble-r-container flex column"
+          style="
+            background-color: var(--color_bTGzr_default);
+            overflow: visible;
+            justify-content: flex-start;
+            border-radius: 0px;
+            opacity: 1;
+            align-self: flex-start;
+            min-width: 0px;
+            
+            min-height: 0px;
+            height: max-content;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: calc(100% + 0px);
+            margin: 0px;
+            z-index: 2;
+          "
+        >
+          <div
+            class="bubble-element Group baTaHaCaS bubble-r-container flex column"
+            style="
+              overflow: visible;
+              justify-content: flex-start;
+              row-gap: 24px;
+              border-radius: 0px;
+              opacity: 1;
+              align-self: center;
+              min-width: 0px;
+              max-width: 1137px;
+              
+              min-height: 0px;
+              height: max-content;
+              flex-grow: 0;
+              flex-shrink: 0;
+              width: calc(100% - 80px);
+              margin: 36px 40px 48px;
+              z-index: 2;
+            "
+          >
+            <div
+              class="bubble-element Group baTaHaCaR bubble-r-container flex column"
+              style="
+                overflow: visible;
+                justify-content: flex-start;
+                row-gap: 0px;
+                border-radius: 0px;
+                opacity: 1;
+                align-self: flex-start;
+                min-width: 0px;
+                
+                min-height: 60px;
+                height: max-content;
+                flex-grow: 0;
+                flex-shrink: 0;
+                width: calc(100% + 0px);
+                margin: 0px;
+                z-index: 5;
+                display: none;
+              "
+            >
+              <h4
+                class="bubble-element Text baTaHaCaL"
+                style="
+                  overflow: visible;
+                  font-family: var(--font_bTHAI_default);
+                  font-size: 24px;
+                  font-weight: 700;
+                  color: var(--color_bTHAC_default);
+                  text-align: center;
+                  line-height: 1.4;
+                  border-radius: 0px;
+                  opacity: 1;
+                  align-self: flex-start;
+                  min-width: 0px;
+                  
+                  min-height: 0px;
+                  height: max-content;
+                  flex-grow: 0;
+                  flex-shrink: 0;
+                  width: calc(100% + 0px);
+                  margin: 0px;
+                  z-index: 3;
+                  display: none;
+                "
+              >
+                The #1 dream interpretation app
+              </h4>
+              <div
+                class="bubble-element Text baTaHaCaN"
+                style="
+                  overflow: visible;
+                  font-family: var(--font_bTHAJ_default_default);
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: var(--color_bTHAC_default);
+                  text-align: center;
+                  line-height: 1.4;
+                  border-radius: 0px;
+                  opacity: 1;
+                  align-self: center;
+                  min-width: 0px;
+                  
+                  min-height: 0px;
+                  height: max-content;
+                  flex-grow: 0;
+                  flex-shrink: 0;
+                  width: calc(100% + 0px);
+                  margin: 0px;
+                  z-index: 3;
+                  display: none;
+                "
+              >
+                As recognized by renowned sleep experts and therapists
+              </div>
+            </div>
+            <div
+              class="bubble-element Group baTaHaCaH bubble-r-container flex row"
+              style="
+                overflow: visible;
+                justify-content: center;
+                gap: 24px;
+                border-radius: 0px;
+                opacity: 1;
+                align-self: flex-start;
+                min-width: 0px;
+                
+                min-height: 0px;
+                height: max-content;
+                flex-grow: 0;
+                flex-shrink: 0;
+                width: calc(100% + 0px);
+                margin: 0px;
+                z-index: 4;
+              "
+            >
+              <div>
+                <div class="max-w-screen-lg mx-auto">
+                  <div class="text-center mb-8">
+                    <h3
+                      class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900"
+                    >
+                      Рекомендации по работе со
+                      <span class="text-indigo-600">сновидениями</span>
+                    </h3>
+                  </div>
+
+                  <div class="px-10 sm:px-16">
+                    <!-- <div class="py-3 uppercase text-sm text-gray-500 font-medium">
+                  Technical
+                </div> -->
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          1
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Ведение дневника сновидений помогает показать
+                            бессознательному, что твои намерения "серьёзны" и ты
+                            готов прислушиваться к нему и видеть больше снов.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          2
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Записывай сон сразу при пробуждении. При
+                            возникновении сложностей с записью от руки -
+                            используй диктофон, а затем перенеси сон в блокнот
+                            или наш бот.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          3
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Учись связывать события сна с текущими. В дневнике
+                            сновидений также полезно в паре предложений
+                            описывать, что сейчас происходит в твоей дневной
+                            жизни.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          4
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Не оценивай: полезно/не полезно, хорошо/плохо - это
+                            не о том. Сон может открыть тебе гораздо больше
+                            смыслов, когда ты перестаешь относиться к нему в
+                            оценочном ключе.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          5
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Записывай сны в настоящем времени. Использование
+                            прошедшего времени – защитный механизм, который чаще
+                            всего служит созданию барьера между бодрствующим Эго
+                            и опытом в сновидении.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          6
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Используй обращение к внутреннему Мастеру
+                            сновидений, и собственную установку на запоминание.
+                            Например, перед сном ты можешь кратко сформулировать
+                            вопрос, на который хотел бы получить ответ
+                            бессознательного.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          7
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            При записи сновидений давай им краткое название.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          8
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Не накладывай ограничений на методы взаимодействия
+                            со своими сновидениями. Чем больше творчества
+                            проявится в общении с бессознательным - тем больше
+                            энергии может потенциально высвободиться из такой
+                            работы.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          9
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Не игнорируй фрагменты и обрывки сновидений. Чаще
+                            всего "фрагмент" является образом, который память
+                            тщательно отредактировала, чтобы сделать
+                            символическое изложение как можно более экономным и
+                            ясным. В то же время, это самое яркое, что сохранила
+                            память. Ощущение, что сновидение неполно и потому не
+                            важно, исходит из ошибочной установки эго на
+                            стремление к законченности и структуре сюжета,
+                            свойственной художественным произведениям.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          10
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Заново переживай свои сновидения в активном
+                            воображении, а также с точек зрения различных
+                            действующих лиц. Фиксируй эти новые образы на бумаге
+                            и иногда возвращайся к ним.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          11
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Представляй различные варианты, которыми твоё
+                            сновидение могло бы продолжиться, если бы ты не
+                            проснулся.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          12
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Периодически возвращайся назад и пересматривай
+                            сновидения. Ты удивишься, как значимо может
+                            оказаться давно приснившееся сновидение, случайно
+                            попавшееся под руку.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          13
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Практикуй медитативные техники в жизни наяву. Если
+                            представить, что сейчас ты спишь, на какие образы в
+                            окружающей действительности обратил бы внимание? Как
+                            бы ты пересказал этот сон, о чём он?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-2">
+                      <div class="flex items-start my-2">
+                        <div
+                          class="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                        >
+                          14
+                        </div>
+                        <div class="text-md">
+                          <p class="text-gray-900 font-normal mb-2">
+                            Не пугайся кошмаров. Чувства, возникшие от
+                            сновидения - реакция Эго, которая часто несёт
+                            защитный характер и мешает увидеть истинное послание
+                            бессознательного.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1186,7 +1288,7 @@
           </div>
         </div>
       </div>
-    
+      
     </div>
   </body>
 </html>

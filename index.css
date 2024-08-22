@@ -86,6 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: inherit;
+  font-family: var(--font_bTHAI_default);
 }
 
 html,
@@ -194,6 +195,7 @@ section {
 
 body {
   line-height: 1;
+  
 }
 
 ol,
@@ -13971,3 +13973,14 @@ body {
   }
 }
 
+.text-indigo-600 {
+color:  var(--color_bTGzw_default)
+}
+
+.bg-indigo-500 {
+  background-color:  var(--color_bTGzw_default)
+}
+
+.mb-2 {
+  line-height: 1.5;
+}
