@@ -2,10 +2,10 @@ module.exports = {
     open_bot: "Open the bot in Telegram",
     instrument: "This is a tool to better understand yourself",
     why: "Why do you need this bot?",
-
+    lang: "Ru",
     motivation: "Start understanding yourself better through dreams",
     motivation_two: "The bot allows you to store your dreams and interpret them from a Jungian psychology perspective",
-
+lang_link : "'./ru.html'",
     description: `Dreams are magical messages that help us get closer to ourselves.
 
 How to understand the language of dreams? If you have ever wondered about this question, our bot is for you!

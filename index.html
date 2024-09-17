@@ -68,11 +68,11 @@
     <meta name="twitter:site_name" content="Night insight bot" />
     <meta
       property="og:description"
-      content="Bot for writing and anlyzing your dreams"
+      content="Бот для записи и анализа сновидений"
     />
     <meta
       name="twitter:description"
-      content="Bot for writing and anlyzing your dreams"
+      content="Бот для записи и анализа сновидений"
     />
     <link
       rel="image_src"
@@ -117,14 +117,149 @@
       }
     </style>
     <script type="text/javascript">
-      !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<g.length;t++)i(e,g[t],!1);for(var r=0;r<m.length;r++)i(e,m[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-pY2pkwHaLM/6UIseFHVU3hOKr6oAvhLcdYkoRZyaMDWLjpM6B7nTxtOdE823WAOQ",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var p=function(){return this._q=[],this},l=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<l.length;d++)n(p,l[d]);r.Identify=p;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
-      
-      amplitude.init('cdf13d8e1313edd318275486c704ddc6');
+      !(function () {
+        "use strict";
+        !(function (e, t) {
+          var r = e.amplitude || { _q: [], _iq: {} };
+          if (r.invoked)
+            e.console &&
+              console.error &&
+              console.error("Amplitude snippet has been loaded.");
+          else {
+            var n = function (e, t) {
+                e.prototype[t] = function () {
+                  return (
+                    this._q.push({
+                      name: t,
+                      args: Array.prototype.slice.call(arguments, 0),
+                    }),
+                    this
+                  );
+                };
+              },
+              s = function (e, t, r) {
+                return function (n) {
+                  e._q.push({
+                    name: t,
+                    args: Array.prototype.slice.call(r, 0),
+                    resolve: n,
+                  });
+                };
+              },
+              o = function (e, t, r) {
+                e._q.push({ name: t, args: Array.prototype.slice.call(r, 0) });
+              },
+              i = function (e, t, r) {
+                e[t] = function () {
+                  if (r)
+                    return {
+                      promise: new Promise(
+                        s(e, t, Array.prototype.slice.call(arguments))
+                      ),
+                    };
+                  o(e, t, Array.prototype.slice.call(arguments));
+                };
+              },
+              a = function (e) {
+                for (var t = 0; t < g.length; t++) i(e, g[t], !1);
+                for (var r = 0; r < m.length; r++) i(e, m[r], !0);
+              };
+            r.invoked = !0;
+            var c = t.createElement("script");
+            (c.type = "text/javascript"),
+              (c.integrity =
+                "sha384-pY2pkwHaLM/6UIseFHVU3hOKr6oAvhLcdYkoRZyaMDWLjpM6B7nTxtOdE823WAOQ"),
+              (c.crossOrigin = "anonymous"),
+              (c.async = !0),
+              (c.src =
+                "https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz"),
+              (c.onload = function () {
+                e.amplitude.runQueuedFunctions ||
+                  console.log("[Amplitude] Error: could not load SDK");
+              });
+            var u = t.getElementsByTagName("script")[0];
+            u.parentNode.insertBefore(c, u);
+            for (
+              var p = function () {
+                  return (this._q = []), this;
+                },
+                l = [
+                  "add",
+                  "append",
+                  "clearAll",
+                  "prepend",
+                  "set",
+                  "setOnce",
+                  "unset",
+                  "preInsert",
+                  "postInsert",
+                  "remove",
+                  "getUserProperties",
+                ],
+                d = 0;
+              d < l.length;
+              d++
+            )
+              n(p, l[d]);
+            r.Identify = p;
+            for (
+              var f = function () {
+                  return (this._q = []), this;
+                },
+                v = [
+                  "getEventProperties",
+                  "setProductId",
+                  "setQuantity",
+                  "setPrice",
+                  "setRevenue",
+                  "setRevenueType",
+                  "setEventProperties",
+                ],
+                y = 0;
+              y < v.length;
+              y++
+            )
+              n(f, v[y]);
+            r.Revenue = f;
+            var g = [
+                "getDeviceId",
+                "setDeviceId",
+                "getSessionId",
+                "setSessionId",
+                "getUserId",
+                "setUserId",
+                "setOptOut",
+                "setTransport",
+                "reset",
+                "extendSession",
+              ],
+              m = [
+                "init",
+                "add",
+                "remove",
+                "track",
+                "logEvent",
+                "identify",
+                "groupIdentify",
+                "setGroup",
+                "revenue",
+                "flush",
+              ];
+            a(r),
+              (r.createInstance = function (e) {
+                return (r._iq[e] = { _q: [] }), a(r._iq[e]), r._iq[e];
+              }),
+              (e.amplitude = r);
+          }
+        })(window, document);
+      })();
+
+      amplitude.init("cdf13d8e1313edd318275486c704ddc6");
 
       function openBot(from) {
-        amplitude.logEvent('open_bot', { from });
+        amplitude.logEvent("open_bot", { from });
       }
-      </script>
+    </script>
   </head>
   <body style="height: 100%; display: flex; flex-direction: column">
     <div
@@ -157,7 +292,7 @@
             opacity: 1;
             align-self: stretch;
             min-width: 0px;
-            
+
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -176,7 +311,7 @@
               opacity: 1;
               align-self: stretch;
               min-width: 0px;
-              
+
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -196,7 +331,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                
+
                 min-height: 0px;
                 width: max-content;
                 flex-grow: 0;
@@ -213,7 +348,7 @@
                   align-self: center;
                   min-width: 32px;
                   max-width: 32px;
-                  
+
                   width: 32px;
                   flex-grow: 1;
                   height: max-content;
@@ -250,7 +385,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   width: max-content;
                   flex-grow: 0;
@@ -273,7 +408,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                
+
                 min-height: 0px;
                 width: 0px;
                 flex-grow: 1;
@@ -282,41 +417,61 @@
                 z-index: 5;
               "
             >
-            <button
-            onclick="window.location.href = './ru.html'"
-            class="bubble-element Button baTaHaBaJ"
-            style="
-              box-shadow: 0px 7px 30px -10px rgba(var(--color_bTGzr_default_rgb), 0.1);
-              background-color: var(--color_bTGzr_default);
-              font-family: var(--font_bTHAJ_default_default);
-              font-size: 14px;
-              font-weight: 600;
-              color: var(--color_bTHAC_default);
-              text-align: center;
-              line-height: 1.4;
-              border-radius: 50px;
-              padding: 12px 24px;
-              opacity: 1;
-              align-self: flex-start;
-              min-width: 0px;
-              
-              min-height: 48px;
-              max-height: 48px;
-              width: max-content;
-              flex-grow: 0;
-              height: 48px;
-              margin: 0px;
-              z-index: 6;
-              cursor: pointer;
-            "
-          >
-            
-         <span class="lang">
-            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg  viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="languageIconTitle" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000"> <title id="languageIconTitle">Language</title> <circle cx="12" cy="12" r="10"/> <path stroke-linecap="round" d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"/> <path stroke-linecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15"/> </svg>
-          </span>Ru
-          
-          </button>
+              <button
+                onclick="window.location.href = &#39;./ru.html&#39;;"
+                class="bubble-element Button baTaHaBaJ"
+                style="
+                  box-shadow: 0px 7px 30px -10px rgba(var(--color_bTGzr_default_rgb), 0.1);
+                  background-color: var(--color_bTGzr_default);
+                  font-family: var(--font_bTHAJ_default_default);
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: var(--color_bTHAC_default);
+                  text-align: center;
+                  line-height: 1.4;
+                  border-radius: 50px;
+                  padding: 12px 24px;
+                  opacity: 1;
+                  align-self: flex-start;
+                  min-width: 0px;
+
+                  min-height: 48px;
+                  max-height: 48px;
+                  width: max-content;
+                  flex-grow: 0;
+                  height: 48px;
+                  margin: 0px;
+                  z-index: 6;
+                  cursor: pointer;
+                "
+              >
+                <span class="lang">
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    viewBox="0 0 24 24"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="languageIconTitle"
+                    stroke="#000000"
+                    stroke-width="1"
+                    stroke-linecap="square"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    color="#000000"
+                  >
+                    <title id="languageIconTitle">Language</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                      stroke-linecap="round"
+                      d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      d="M2.5 9L21.5 9M2.5 15L21.5 15"
+                    />
+                  </svg> </span
+                >Ru
+              </button>
               <button
                 class="bubble-element Button baTaHaBaJ"
                 style="
@@ -333,7 +488,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 48px;
                   max-height: 48px;
                   width: max-content;
@@ -343,8 +498,11 @@
                   z-index: 6;
                 "
               >
-                <a href="https://t.me/deeper_dreams_bot" target="_blank" onClick="openBot('top')"
-                  >Open bot in Telegram</a
+                <a
+                  href="https://t.me/deeper_dreams_bot"
+                  target="_blank"
+                  onClick="openBot('top')"
+                  >Open the bot in Telegram</a
                 >
               </button>
             </div>
@@ -361,7 +519,7 @@
             opacity: 1;
             align-self: flex-start;
             min-width: 0px;
-            
+
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -382,7 +540,7 @@
               align-self: center;
               min-width: 0px;
               max-width: 1137px;
-              
+
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -403,7 +561,7 @@
                 align-self: center;
 
                 max-width: 480px;
-                
+
                 min-height: 0px;
                 width: 100%;
                 flex-grow: 1;
@@ -425,7 +583,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -436,7 +594,7 @@
                   display: none;
                 "
               >
-               
+                аналищ
               </h5>
               <h1
                 class="big-title bubble-element Text baTaHaBb"
@@ -451,7 +609,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -459,9 +617,10 @@
                   width: calc(100% + 0px);
                   margin: 0px;
                   z-index: 3;
+                  line-height: 1.3;
                 "
               >
-              Start understanding yourself better through dreams
+                Start understanding yourself better through dreams
               </h1>
               <div
                 class="bubble-element Text baTaHaBaV"
@@ -476,7 +635,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -484,9 +643,11 @@
                   width: calc(100% + 0px);
                   margin: 0px 0px 12px;
                   z-index: 3;
+                  line-height: 1.9;
                 "
-                >
-                The bot allows you to store your dreams and interpret them from the perspective of Jungian psychology
+              >
+               The bot allows you to store your dreams and interpret them from a Jungian psychology perspective
+                
               </div>
               <button
                 class="bubble-element Button baTaHaBaX"
@@ -504,7 +665,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 150px;
-                  
+
                   min-height: 48px;
                   max-height: 48px;
                   height: 48px;
@@ -514,8 +675,11 @@
                   z-index: 4;
                 "
               >
-                <a href="https://t.me/deeper_dreams_bot" target="_blank" onClick="openBot('main')"
-                  >Open bot in Telegram</a
+                <a
+                  href="https://t.me/deeper_dreams_bot"
+                  target="_blank"
+                  onClick="openBot('main')"
+                  >Open the bot in Telegram</a
                 >
               </button>
             </div>
@@ -530,7 +694,7 @@
                 align-self: center;
                 min-width: 0px;
                 max-width: 500px;
-                
+
                 min-height: 0px;
                 width: 0px;
                 flex-grow: 1;
@@ -546,7 +710,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  
+
                   width: 0px;
                   flex-grow: 1;
                   height: max-content;
@@ -586,7 +750,7 @@
             opacity: 1;
             align-self: flex-start;
             min-width: 0px;
-            
+
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -607,7 +771,7 @@
               align-self: center;
               min-width: 0px;
               max-width: 1137px;
-              
+
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -627,7 +791,7 @@
                 opacity: 1;
                 align-self: center;
                 min-width: 0px;
-                
+
                 min-height: 60px;
                 height: max-content;
                 flex-grow: 0;
@@ -647,7 +811,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 60px;
                   height: max-content;
                   flex-grow: 0;
@@ -671,7 +835,7 @@
                     opacity: 1;
                     align-self: flex-start;
                     min-width: 0px;
-                    
+
                     min-height: 0px;
                     height: max-content;
                     flex-grow: 0;
@@ -697,7 +861,7 @@
                     opacity: 1;
                     align-self: center;
                     min-width: 0px;
-                    
+
                     min-height: 0px;
                     height: max-content;
                     flex-grow: 0;
@@ -708,8 +872,7 @@
                     display: none;
                   "
                 >
-                  This is a tool to better understand yourself.
-                </p>
+                  This is a tool to better understand yourself
                 </div>
               </div>
             </div>
@@ -724,7 +887,7 @@
                 opacity: 1;
                 align-self: flex-start;
                 min-width: 0px;
-                
+
                 min-height: 0px;
                 height: max-content;
                 flex-grow: 0;
@@ -744,7 +907,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   width: 0px;
                   flex-grow: 1;
@@ -761,7 +924,6 @@
                     align-self: center;
                     min-width: 0px;
                     max-width: 360px;
-                    
 
                     width: 100%;
                     height: max-content;
@@ -797,7 +959,7 @@
                     opacity: 1;
                     align-self: center;
                     min-width: 20%;
-                    
+
                     min-height: 0px;
                     width: 20%;
                     flex-grow: 1;
@@ -816,7 +978,7 @@
                       opacity: 1;
                       align-self: flex-start;
                       min-width: 0px;
-                      
+
                       min-height: 0px;
                       height: max-content;
                       flex-grow: 0;
@@ -839,7 +1001,7 @@
                         opacity: 1;
                         align-self: flex-start;
                         min-width: 0px;
-                        
+
                         min-height: 0px;
                         height: max-content;
                         flex-grow: 0;
@@ -847,18 +1009,17 @@
                         width: calc(100% + 0px);
                         margin: 0px;
                         z-index: 2;
+                        white-space: pre-wrap;
                       "
-                  >
-                      Dreams are magical messages that help us connect with ourselves.
-                      <br /><br />
-                      How can we understand the language of dreams? If you have ever wondered about this, our bot is for you!
-                      <br /><br />
-                      Night Insight will help you explore the world of dreams, uncover their deep meaning, and reveal the secrets of your subconscious.
-                      <br /><br />
-                      While it cannot replace a consultation with a psychotherapist, the bot will be your faithful assistant in dream exploration and help you understand their language.
-                      <br /><br />
-                      Simply describe your dream, and Night Insight will provide insights into what may be hidden behind its symbols.
-                    </p>
+                    >Dreams are magical messages that help us get closer to ourselves.
+
+How to understand the language of dreams? If you have ever wondered about this question, our bot is for you!
+
+Night Insight will help you explore the world of dreams, uncover their deep meaning, and reveal the secrets of your subconscious.
+
+While it cannot replace a consultation with a psychotherapist, the bot will become your faithful assistant in dream exploration and provide you with the opportunity to understand their language.
+
+Simply describe your dream, and Night Insight will suggest what may be hidden behind its images.
                     </h6>
                     <div
                       class="bubble-element Group baTaHaEaP bubble-r-container flex row"
@@ -870,7 +1031,7 @@
                         opacity: 1;
                         align-self: flex-start;
                         min-width: 0px;
-                        
+
                         min-height: 0px;
                         height: max-content;
                         flex-grow: 0;
@@ -893,7 +1054,7 @@
                           opacity: 1;
                           align-self: center;
                           min-width: 0px;
-                          
+
                           min-height: 0px;
                           width: 0px;
                           flex-grow: 1;
@@ -901,7 +1062,7 @@
                           margin: 0px;
                           z-index: 2;
                         "
-                        >
+                      >
                         With wishes of discoveries on your dream path, Katya and Anna.
                       </div>
                     </div>
@@ -911,7 +1072,7 @@
             </div>
           </div>
         </div>
-        
+
         <div
           class="bubble-element Group baTaHaCaT bubble-r-container flex column"
           style="
@@ -922,7 +1083,7 @@
             opacity: 1;
             align-self: flex-start;
             min-width: 0px;
-            
+
             min-height: 0px;
             height: max-content;
             flex-grow: 0;
@@ -943,7 +1104,7 @@
               align-self: center;
               min-width: 0px;
               max-width: 1137px;
-              
+
               min-height: 0px;
               height: max-content;
               flex-grow: 0;
@@ -963,7 +1124,7 @@
                 opacity: 1;
                 align-self: flex-start;
                 min-width: 0px;
-                
+
                 min-height: 60px;
                 height: max-content;
                 flex-grow: 0;
@@ -988,7 +1149,7 @@
                   opacity: 1;
                   align-self: flex-start;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -1015,7 +1176,7 @@
                   opacity: 1;
                   align-self: center;
                   min-width: 0px;
-                  
+
                   min-height: 0px;
                   height: max-content;
                   flex-grow: 0;
@@ -1039,7 +1200,7 @@
                 opacity: 1;
                 align-self: flex-start;
                 min-width: 0px;
-                
+
                 min-height: 0px;
                 height: max-content;
                 flex-grow: 0;
@@ -1053,10 +1214,9 @@
                 <div class="max-w-screen-lg mx-auto" id="advice">
                   <div class="text-center mb-8">
                     <h3
-                      class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-                   
-                      Recommendations for working with <span class="text-indigo-600">dreams</span>
-                    
+                      class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900"
+                    >
+                      Recommendations for working with dreams
                     </h3>
                   </div>
 
@@ -1064,100 +1224,107 @@
                     <!-- <div class="py-3 uppercase text-sm text-gray-500 font-medium">
                   Technical
                 </div> -->
-                
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           1
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Keeping a dream journal helps show the unconscious mind that your intentions are "serious" and that you are ready to listen to it and see more dreams.
+                            Keeping a dream journal helps show your unconscious that your intentions are &#34;serious&#34; and that you are ready to listen to it and see more dreams.
                           </p>
                         </div>
                       </div>
                     </div>
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           2
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Write down your dream immediately upon waking up. If you have difficulties writing by hand, use a voice recorder and then transfer the dream to a notebook or our bot.
+                            Write down the dream immediately upon waking up. If you have difficulty writing by hand, use a voice recorder, and then transfer the dream to a notebook or our bot.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           3
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Learn to connect dream events with your current life. In the dream journal, it is also useful to describe in a couple of sentences what is happening in your daily life.
+                            Learn to connect dream events with current events. In the dream journal, it is also useful to describe in a couple of sentences what is happening in your daily life.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           4
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Do not evaluate: useful/not useful, good/bad - it's not about that. A dream can reveal much more meanings when you stop judging it.
+                            Do not evaluate: useful/not useful, good/bad - it&#39;s not about that. A dream can reveal much more meaning when you stop judging it.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           5
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Write down dreams in the present tense. The use of past tense is a defensive mechanism that often creates a barrier between the waking Ego and the dream experience.
+                            Record dreams in the present tense. Using the past tense is a defensive mechanism that often serves to create a barrier between the waking Ego and the dream experience.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           6
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Use the address to the inner Dream Master and set your intention to remember. For example, before sleep, you can briefly formulate a question that you would like the unconscious to answer.
+                            Use the address to the inner Master of Dreams and set your intention to remember. For example, before sleep, you can briefly formulate a question that you would like the unconscious to answer.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           7
                         </div>
@@ -1168,41 +1335,44 @@
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           8
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Do not impose restrictions on methods of interacting with your dreams. The more creativity you show in communicating with the unconscious, the more potential energy can be released from such work.
+                            Do not impose restrictions on methods of interacting with your dreams. The more creativity is manifested in communication with the unconscious, the more energy can potentially be released from such work.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           9
                         </div>
                         <div class="text-md">
-                          <p class="text-gray-900 font-normal mb-2"></p>
-                            Do not ignore dream fragments and snippets. Often, a "fragment" is an image that memory has carefully edited to make the symbolic representation as economical and clear as possible. At the same time, it is the most vivid thing that memory has retained. The feeling that the dream is incomplete and therefore unimportant comes from the ego's mistaken assumption that dreams should strive for completeness and a plot structure typical of works of art.
+                          <p class="text-gray-900 font-normal mb-2">
+                            Do not ignore dream fragments and snippets. Often, a &#34;fragment&#34; is a symbol that memory has carefully edited to make the symbolic representation as economical and clear as possible. At the same time, it is the brightest thing that memory has preserved. The feeling that the dream is incomplete and therefore unimportant comes from the mistaken ego setting for the desire for completeness and the plot structure typical of works of art.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           10
                         </div>
@@ -1213,75 +1383,79 @@
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           11
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Imagine different scenarios in which your dream could continue if you hadn't woken up.
+                            Imagine different scenarios in which your dream could continue if you hadn&#39;t woken up.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           12
                         </div>
                         <div class="text-md">
                           <p class="text-gray-900 font-normal mb-2">
-                            Periodically go back and review your dreams. You will be surprised how significant a dream that you had a long time ago, randomly stumbled upon, can turn out to be.
+                            Periodically go back and review your dreams. You will be surprised how significant a dream that you dreamt a long time ago, which happened to come to hand, can be.
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           13
                         </div>
                         <div class="text-md">
-                          <p class="text-gray-900 font-normal mb-2"></p>
+                          <p class="text-gray-900 font-normal mb-2">
                             Practice meditative techniques in waking life. If you imagine that you are sleeping right now, what images in the surrounding reality would you pay attention to? How would you retell this dream, what is it about?
                           </p>
                         </div>
                       </div>
                     </div>
-                
+
+                    
                     <div class="ml-2">
                       <div class="flex items-start my-2">
                         <div
-                          class=" sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
+                          class="sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-normal"
                         >
                           14
                         </div>
                         <div class="text-md">
-                          <p class="text-gray-900 font-normal mb-2"></p>
-                            Do not be afraid of nightmares. The feelings that arise from a dream are a reaction of the Ego, which often serves as a protective measure and hinders seeing the true message of the unconscious.
+                          <p class="text-gray-900 font-normal mb-2">
+                            Do not be afraid of nightmares. The feelings that arise from a dream are the reaction of the Ego, which often has a protective character and prevents you from seeing the true message of the unconscious.
                           </p>
                         </div>
                       </div>
                     </div>
+
+                    
                   </div>
-                
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </body>
 </html>
