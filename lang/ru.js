@@ -4,6 +4,7 @@ module.exports = {
   why: "Зачем нужен этот бот?",
 lang: "Eng",
 lang_link : "'./index.html'",
+bot_link : "https://t.me/deeper_dreams_bot",
   motivation: "Начните понимать себя лучше с помощью сновидений",
   motivation_two:
     "Бот позволяет хранить ваши сны и интерпретировать их с точки зрения Юнгианской психологии",
