@@ -2,6 +2,7 @@ module.exports = {
   open_bot: "Открыть бота в Telegram",
   instrument: "Это инструмент, чтобы лучше понять себя",
   why: "Зачем нужен этот бот?",
+  content_title: "Бот для записи и анализа сновидений",
 lang: "Eng",
 lang_link : "'./index.html'",
 bot_link : "https://t.me/deeper_dreams_bot",

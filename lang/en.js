@@ -4,6 +4,7 @@ module.exports = {
     why: "Why do you need this bot?",
     lang: "Ru",
     bot_link : "https://t.me/dreams_analysis_bot",
+    content_title: "Bot for storing ana analysis of your dreams",
     motivation: "Start understanding yourself better through dreams",
     motivation_two: "The bot allows you to store your dreams and interpret them from a Jungian psychology perspective",
 lang_link : "'./ru.html'",
