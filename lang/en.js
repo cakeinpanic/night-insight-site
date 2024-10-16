@@ -3,7 +3,7 @@ module.exports = {
     instrument: "This is a tool to better understand yourself",
     why: "Why do you need this bot?",
     lang: "Ru",
-    bot_link : "https://t.me/dreams_analys_bot",
+    bot_link : "https://t.me/dreams_analysis_bot",
     motivation: "Start understanding yourself better through dreams",
     motivation_two: "The bot allows you to store your dreams and interpret them from a Jungian psychology perspective",
 lang_link : "'./ru.html'",
